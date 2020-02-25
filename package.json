@@ -1,0 +1,17 @@
+{
+  "name": "vue-lego-cli",
+  "version": "0.0.1",
+  "description": "可以构建可插拔式Vue项目的脚手架工具",
+  "bin": {
+    "vue-lego-cli": "./bin/index.js"
+  },
+  "author": "mzq",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.4",
+    "ora": "^4.0.3"
+  }
+}
