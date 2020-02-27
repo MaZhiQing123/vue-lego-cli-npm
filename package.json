@@ -1,6 +1,6 @@
 {
-  "name": "vue-lego-cli-npm",
-  "version": "0.0.5",
+  "name": "vue-lego-cli",
+  "version": "0.0.7",
   "description": "可以构建可插拔式Vue项目的脚手架工具",
   "bin": {
     "vue-lego-cli": "./bin/index.js"

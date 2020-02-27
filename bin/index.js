@@ -16,10 +16,6 @@ const inquirerList = [{
     type: "confirm",
     message: "是否使用cnpm?",
     name: "npm_type"
-},{
-    type: "confirm",
-    message: "是否使用router?",
-    name: "router"
 }]
 
 async function answer(){
@@ -40,7 +36,7 @@ async function answer(){
             dt.succeed('模板下载完成');
 
             const dm = ora('开始下载依赖...').start();
-            exec(`cd ${answerList.project_name} && cnpm i`, (err, stdout, stderr) => {
+            exec(`cd ${answerList.project_name} && ${answerList.npm_type?'cnpm':'npm'} i`, (err, stdout, stderr) => {
                 console.log(answerList.project_name)
                 if(err){
                     console.log(err);
